@@ -1,6 +1,6 @@
 ---
 name: second-brain-kit
-description: Set up a GitHub-backed, Obsidian-compatible Second Brain for humans and AI agents. Use when creating a new Second Brain with Inbox, Sources, Knowledge, Projects, Outputs, and System layers.
+description: Set up a GitHub-backed, Obsidian-compatible Second Brain for humans and AI agents. Use when creating a new Second Brain with Inbox, Sources, Knowledge, Projects, Outputs, Daily, System, and Archive layers.
 user-invocable: true
 ---
 
@@ -51,7 +51,9 @@ Create the standard structure without asking for initial Projects, language, tag
 20 Knowledge/
 30 Projects/
 40 Outputs/
+50 Daily/
 90 System/
+99 Archive/
 ```
 
 4. Copy the templates from this Skill into the target:
@@ -73,11 +75,17 @@ After setup, the user may separately ask to add content, create Projects, connec
 - **Knowledge** — durable synthesis that can be updated over time.
 - **Projects** — project-specific context and application of reusable Knowledge.
 - **Outputs** — publishable or shareable artifacts.
+- **Daily** — ephemeral daily work/life planning and execution state.
 - **System** — schemas, workflows, maintenance rules, indexes, and logs.
+- **Archive** — cold storage excluded from normal AI context.
 
 A Source is not Knowledge. Preserve what the source said, then synthesize reusable conclusions into Knowledge.
 
 Prefer updating an existing Knowledge note over creating a near-duplicate.
+
+## Context loading
+
+Do not load the entire Second Brain as working context. Prefer durable/current Knowledge, Projects, and relevant Outputs. Read only today's/recent Daily notes when operational continuity is needed. Retrieve Sources and Inbox selectively. Treat Archive as cold storage and do not search or read it unless the user explicitly requests history or active material directly requires it.
 
 ## Maintenance
 
