@@ -22,7 +22,9 @@ More Skills, such as migration from an existing Second Brain, can be added indep
 20 Knowledge/
 30 Projects/
 40 Outputs/
+50 Daily/
 90 System/
+99 Archive/
 ```
 
 ![Second Brain architecture and data flow](./assets/second-brain-architecture.zh-TW.PNG)
@@ -32,7 +34,9 @@ More Skills, such as migration from an existing Second Brain, can be added indep
 - **Knowledge** — reusable synthesis built from Sources.
 - **Projects** — project-specific context and application.
 - **Outputs** — blog posts, social posts, documentation, and other finished material.
+- **Daily** — short-lived work/life planning and execution state.
 - **System** — rules that tell humans and AI agents how to maintain the knowledge base.
+- **Archive** — cold storage excluded from normal AI context.
 
 ## Use it with an AI agent
 
@@ -51,6 +55,12 @@ You can also point an AI agent directly at this repository and ask it to follow 
 The notes remain normal Markdown and can still be opened as an Obsidian Vault. GitHub provides a shared source that can be synchronized across computers and accessed by AI tools that can work with GitHub.
 
 This means the client can change—Obsidian, a coding agent, ChatGPT, or another tool—without creating a separate knowledge silo for each one.
+
+## Operational context and archive
+
+Daily planning lives in `50 Daily/` and is intentionally ephemeral. Durable project information is promoted to Projects, reusable insight to Knowledge, and old Daily notes can be moved to `99 Archive/`.
+
+AI agents should not treat the whole repository as active context. `99 Archive/` is cold storage and is read only for explicit historical requests or when current material directly requires it. Sources and Inbox are retrieved selectively rather than loaded wholesale.
 
 ## Incremental maintenance
 
