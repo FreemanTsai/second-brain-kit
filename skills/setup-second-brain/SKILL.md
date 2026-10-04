@@ -61,7 +61,7 @@ Create the standard structure without asking for initial Projects, language, tag
    - `templates/schema.md` → `90 System/schema.md`
    - `templates/workflows.md` → `90 System/workflows.md`
    - `templates/weekly-knowledge-review.md` → `90 System/weekly-knowledge-review.md`
-5. Create `90 System/index.md` and `90 System/log.md`.
+5. Create `50 Daily/README.md` describing the ephemeral Daily layer, `90 System/index.md`, `90 System/log.md`, and `99 Archive/README.md` marking Archive as cold storage excluded from normal AI context.
 6. Make a focused initialization commit.
 7. Verify that the expected structure and files exist in the target repository.
 8. Tell the user setup is complete. Keep the completion message concise and do not automatically start another workflow.
