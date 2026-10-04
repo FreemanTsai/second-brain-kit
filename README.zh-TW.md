@@ -20,7 +20,9 @@
 20 Knowledge/
 30 Projects/
 40 Outputs/
+50 Daily/
 90 System/
+99 Archive/
 ```
 
 ![Second Brain 架構與資料流](./assets/second-brain-architecture.zh-TW.PNG)
@@ -30,7 +32,9 @@
 - **Knowledge**：從 Sources 整理、累積後，可以持續更新與重複使用的知識。
 - **Projects**：專案特定的背景、決策，以及 Knowledge 在專案裡的應用。
 - **Outputs**：Blog、社群文章、文件或其他準備發布與分享的成果。
+- **Daily**：短期的每日工作／生活規劃與執行狀態。
 - **System**：整套 Second Brain 的 Schema、Workflow、維護規則、Index 與 Log。
+- **Archive**：不進入 AI 日常工作 context 的冷資料。
 
 ## 怎麼使用
 
@@ -51,6 +55,12 @@ Second Brain 很可能包含個人筆記、專案內容與尚未公開的資料�
 筆記本身仍然是一般 Markdown，也可以直接作為 Obsidian Vault 使用。GitHub 負責讓不同電腦與能存取 GitHub 的 AI 工具共用同一份資料。
 
 因此上層使用的工具可以更換，不管是 Obsidian、Coding Agent、ChatGPT 或其他工具，都不需要各自維護一份獨立的知識庫。
+
+## Daily 與 Archive
+
+`50 Daily/` 是短期操作層，用來放每天的工作／生活 Focus、執行狀態與臨時 Capture。真正具有長期價值的專案資訊應提升到 Projects，可重複使用的洞見提升到 Knowledge；舊 Daily 可以定期移到 `99 Archive/`。
+
+AI 不應把整個 Repo 都當成 active context。`99 Archive/` 預設不搜尋、不掃描、不讀取，只有明確需要追溯歷史或目前資料直接依賴舊資料時才讀。Sources 與 Inbox 也應採 targeted retrieval，而不是日常整包載入。
 
 ## 定期整理
 
