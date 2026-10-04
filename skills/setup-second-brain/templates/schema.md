@@ -13,7 +13,22 @@ projects: []
 ---
 ```
 
-Primary `type` values: `inbox`, `source`, `knowledge`, `project`, `output`, `system`.
+Primary `type` values: `inbox`, `source`, `knowledge`, `project`, `output`, `daily`, `system`.
+
+## Daily
+
+Daily notes are ephemeral operational state stored under `50 Daily/YYYY/MM/YYYY-MM-DD.md`.
+
+```yaml
+---
+type: daily
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+status: active
+---
+```
+
+Use Daily for today's outcomes, work/life tasks, delegated AI work, and temporary capture. Promote durable information before archiving old Daily notes under `99 Archive/Daily/`.
 
 ## Source
 
