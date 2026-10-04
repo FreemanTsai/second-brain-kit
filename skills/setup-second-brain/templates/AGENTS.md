@@ -21,7 +21,21 @@ All AI agents and human editors should follow these rules.
 - `20 Knowledge/` — durable, synthesized, reusable knowledge.
 - `30 Projects/` — project-specific context and application.
 - `40 Outputs/` — publishable or shareable artifacts.
+- `50 Daily/` — short-lived daily work/life planning and execution state.
 - `90 System/` — schemas, workflows, indexes, logs, and maintenance rules.
+- `99 Archive/` — cold storage excluded from normal AI working context.
+
+## AI context loading
+
+Do not treat the whole repository as active context.
+
+1. Prefer current `20 Knowledge/`, `30 Projects/`, and relevant `40 Outputs/`.
+2. Read `50 Daily/` only for today's note and recent continuity when needed.
+3. Retrieve `10 Sources/` when evidence/provenance is needed.
+4. Read `00 Inbox/` for capture processing or explicit unprocessed-material requests.
+5. Do not search, scan, or read `99 Archive/` by default. Access it only for explicit historical requests or when active material directly requires archived context.
+
+Archived material must not override active Knowledge or current Project state.
 
 ## Ingestion
 
