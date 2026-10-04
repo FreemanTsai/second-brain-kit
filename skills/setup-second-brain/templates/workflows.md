@@ -50,3 +50,28 @@ git push
 ```
 
 Avoid force-push as a normal synchronization mechanism.
+
+
+## Daily operating workflow
+
+Use `50 Daily/YYYY/MM/YYYY-MM-DD.md` for ephemeral daily planning and execution. A Daily note may include today's outcomes, project tasks, personal tasks, delegated AI work, and temporary capture.
+
+At day close or during periodic review:
+
+1. Mark completed work.
+2. Carry forward only work that still matters.
+3. Promote durable project state to Projects or the project's execution system.
+4. Promote reusable insight to Knowledge.
+5. Do not preserve routine execution history as active knowledge.
+
+Periodically, normally monthly, move old Daily notes to `99 Archive/Daily/YYYY/MM/` after durable information has been promoted.
+
+## Archive and context policy
+
+`99 Archive/` is cold storage.
+
+- Do not search, scan, summarize, or load Archive during routine work.
+- Read Archive only for explicit historical requests, older decisions/versions, or when active material directly requires it.
+- Archived material must not override active Knowledge or current Project state.
+- Retrieve Inbox and Sources selectively rather than loading them wholesale.
+- Git history is the audit trail; active folders do not need to retain every obsolete intermediate state.
